@@ -165,7 +165,7 @@ blockquote p:first-child {
 blockquote p:last-child {
 	margin-bottom: 0;
 }
-em, i {
+em{
 	font-style: italic;
 	color: $color-blue-15;
 }
@@ -590,11 +590,11 @@ img {
 	color: $color-white;
 	border-color: $color-white;
 }
-.nav-button a i {
+.nav-button a svg {
 	display: inline-block;
 	color: inherit;
 }
-.nav-button a i:before {
+.nav-button a svg:before {
 	position: relative;
 	width: auto;
 	margin: auto;
@@ -727,7 +727,7 @@ img {
 	color: $color-black;
 	background: rgba(0,0,0,0.05);
 }
-#menu li a i {
+#menu li a svg {
 	position: relative;
 	top: -1px;
 	font-size: 0.8em;
@@ -1043,7 +1043,7 @@ img {
 .post-share a i {
 	color: inherit;
 }
-.post-share a i:before {
+.post-share a svg:before {
 	width: auto;
 	height: auto;
 }
@@ -1157,7 +1157,7 @@ img {
 	font-weight: 400;
 	opacity: 0.75;
 }
-.post-author-bio i {
+.post-author-bio svg {
 	color: inherit;
 }
 .post-author-bio a {
@@ -1406,7 +1406,7 @@ img {
 	height: 1.334em;
 	line-height: 1.334em;
 }
-.pagination a i {
+.pagination a svg {
 	position: relative;
 	width: auto;
 	margin: auto;
@@ -1476,7 +1476,7 @@ img {
 		margin-left: 0;
 		margin-right: 0.667em;
 	}
-	.post-nav i {
+	.post-nav svg {
 		font-size: 1.5em;
 	}
 }
@@ -1537,12 +1537,7 @@ img {
 		padding-left: 0;
 		padding-right: 1.5em;
 	}
-	.post-nav-next i {
-		margin-left: -1em;
-	}
-	.post-nav-prev i {
-		margin-right: -1em;
-	}
+
 }
 
 /* ==========================================================================
