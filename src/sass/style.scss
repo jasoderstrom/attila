@@ -416,11 +416,11 @@ img {
 	display: none;
 }
 
-#blog-icons a {
+.blog-icons a {
 	padding: .2em;
 }
 
-#blog-icons svg:hover {
+.blog-icons svg:hover {
 	color: $primary-color;
 }
 
@@ -778,6 +778,12 @@ img {
 .disclaimer {
 	border-bottom: 1px solid $color-gray-90;
 	padding: 1em 0;
+}
+
+.footer-icons {
+	border-bottom: 1px solid $color-gray-90;
+	padding: 1em 0;
+	text-align: center;
 }
 
 .credits {
