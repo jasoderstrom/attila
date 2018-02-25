@@ -137,4 +137,29 @@ jQuery(function($) {
 			$(this).parent().addClass('activated');
 		});
 	}
+
+    /* ==========================================================================
+       Back to top button
+       ========================================================================== */
+
+    function displayTopButton() {
+        var windowPosition = viewport.scrollTop();
+    	if(windowPosition > 20) {
+    		$("#back-to-top").show();
+		} else {
+    		$("#back-to-top").hide();
+		}
+	}
+
+	$("#back-to-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+
+    viewport.on({
+		'scroll' : function() {
+			displayTopButton();
+		}
+	})
+
+
 });
