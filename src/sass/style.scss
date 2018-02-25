@@ -337,6 +337,30 @@ img {
 }
 
 /* ==========================================================================
+   Font-awesome icons
+   ========================================================================== */
+
+.fa-facebook-square {
+	color: $color-social-facebook;
+}
+
+.fa-twitter-square {
+	color: $color-social-twitter;
+}
+
+.fa-linkedin {
+	color: $color-social-linkedin;
+}
+
+.fa-rss-square {
+	color: $color-rss;
+}
+
+.fa-stack-overflow {
+	color: $color-social-stackoverflow;
+}
+
+/* ==========================================================================
    Header
    ========================================================================== */
 
@@ -364,6 +388,14 @@ img {
 .author-template #blog-header:after,
 #blog-header.has-cover:after {
 	display: none;
+}
+
+#blog-icons a {
+	padding: .2em;
+}
+
+#blog-icons svg:hover {
+	color: $primary-color;
 }
 
 .paged #blog-header.has-cover,
@@ -405,6 +437,18 @@ img {
 	display: block;
 	margin: 0 auto;
 }
+
+.blog-author {
+	position: relative;
+	height: 200px;
+}
+
+.blog-author img {
+	border-radius: 10em;
+	height: 100%;
+	width: auto;
+}
+
 .blog-name {
 	position: relative;
 	display: block;
