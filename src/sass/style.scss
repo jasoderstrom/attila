@@ -773,24 +773,30 @@ img {
 	line-height: 1em;
 	padding-bottom: 6em;
 }
-
-.disclaimer {
-	border-bottom: 1px solid $color-gray-90;
+#footer section {
+	position: relative;
+	z-index: 10;
 	padding: 1em 0;
 }
-
+#footer section:after {
+	position: absolute;
+	width: 32em;
+	height: 1px;
+	left: 50%;
+	bottom: 0;
+	margin-left: -16em;
+	content: '';
+	background: $color-gray-90;
+}
 .footer-icons {
-	border-bottom: 1px solid $color-gray-90;
 	padding: 1em 0;
 	text-align: center;
 }
-
 .footer-icons h3 {
 	text-align: left;
 	padding-bottom: .5em;
 	margin-top: .5em;
 }
-
 .credits {
 	text-align: center;
 	font-size: 0.625em;
