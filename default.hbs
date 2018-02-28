@@ -25,32 +25,30 @@
 		<div id="body-class" style="display: none;" class="{{body_class}}"></div>
 	
 		<footer id="footer">
-			<div class="inner">
-                <section class="blog-icons footer-icons">
-                    <h3>Follow</h3>
-                    <a href="https://github.com/jasoderstrom" title="Github"><i class="fab fa-github-square fa-2x"></i></a>
-                    <a href="https://stackoverflow.com/users/6798222/jasoderstrom" title="Stack Overflow"><i class="fab fa-stack-overflow fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/justin-soderstrom/" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-                    {{#if @blog.twitter}}
-                        <a href="https://twitter.com/{{@blog.twitter}}" title="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
-                    {{/if}}
-                    {{#if @blog.facebook}}
-                        <a href="https://www.facebook.com/{{@blog.facebook}}" title="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
-                    {{/if}}
-                    <a href="{{@blog.url}}/rss" title="RSS"><i class="fas fa-rss-square fa-2x"></i></a>
+                <section class="footer-icons">
+                    <div class="inner">
+                        <h3>Follow</h3>
+                        {{> social-icons}}
+                    </div>
                 </section>
                 <section class="support">
-                    <h3>Support</h3>
-                    <p>Like my blog or found it helpful? Please consider supporting me on <a href="#" title="Support me on Patreon">Patreon!</a></p>
+                    <div class="inner">
+                        <h3>Support</h3>
+                        <p>Like my blog or found it helpful? Please consider supporting me on <a href="#" title="Support me on Patreon">Patreon!</a></p>
+                    </div>
                 </section>
                 <section class="disclaimer">
-                    <h3>Disclaimer</h3>
-                    <p>Opinions expressed here are my own and may not reflect those of people I work with, my employer, friends, etc. Unless I'm quoting someone, they're just my own.</p>
+                    <div class="inner">
+                        <h3>Disclaimer</h3>
+                        <p>Opinions expressed here are my own and may not reflect those of people I work with, my employer, friends, etc. Unless I'm quoting someone, they're just my own.</p>
+                    </div>
                 </section>
-				<div class="credits">
-					<span class="credits-open-source">&copy 2018 Justin Soderstrom under the <a href="https://opensource.org/licenses/MIT" rel="nofollow">MIT license</a></span>
-					<span class="credits-software">Published with <a href="http://ghost.org">Ghost</a></span>
-				</div>
+                <div class="inner">
+                    <section class="credits">
+                        <span class="credits-open-source">&copy 2018 Justin Soderstrom under the <a href="https://opensource.org/licenses/MIT" rel="nofollow">MIT license</a></span>
+                        <span class="credits-software">Published with <a href="http://ghost.org">Ghost</a></span>
+                    </section>
+                </div>
 			</div>
 		</footer>
 	</section>

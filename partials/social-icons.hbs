@@ -1,0 +1,24 @@
+<ul class="blog-icons">
+    <li>
+        <a href="https://github.com/jasoderstrom" title="Github"><i class="fab fa-github-square fa-2x"></i></a>
+    </li>
+    <li>
+        <a href="https://stackoverflow.com/users/6798222/jasoderstrom" title="Stack Overflow"><i class="fab fa-stack-overflow fa-2x"></i></a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/in/justin-soderstrom/" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+    </li>
+    {{#if @blog.twitter}}
+        <li>
+            <a href="https://twitter.com/{{@blog.twitter}}" title="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+        </li>
+    {{/if}}
+    {{#if @blog.facebook}}
+        <li>
+            <a href="https://www.facebook.com/{{@blog.facebook}}" title="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </li>
+    {{/if}}
+    <li>
+        <a href="{{@blog.url}}/rss" title="RSS"><i class="fas fa-rss-square fa-2x"></i></a>
+    </li>
+</ul>

@@ -24,17 +24,8 @@
 		<div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
 		{{/if}}
 	</div>
-    <div class="blog-icons">
-        <a href="https://github.com/jasoderstrom" title="Github"><i class="fab fa-github-square fa-2x"></i></a>
-        <a href="https://stackoverflow.com/users/6798222/jasoderstrom" title="Stack Overflow"><i class="fab fa-stack-overflow fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/justin-soderstrom/" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-        {{#if @blog.twitter}}
-            <a href="https://twitter.com/{{@blog.twitter}}" title="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
-        {{/if}}
-        {{#if @blog.facebook}}
-            <a href="https://www.facebook.com/{{@blog.facebook}}" title="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
-        {{/if}}
-        <a href="{{@blog.url}}/rss" title="RSS"><i class="fas fa-rss-square fa-2x"></i></a>
+    <div>
+       {{> social-icons}}
     </div>
 </header>
 

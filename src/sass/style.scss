@@ -414,15 +414,21 @@ img {
 #blog-header.has-cover:after {
 	display: none;
 }
-
-.blog-icons a {
-	padding: .2em;
+.blog-icons{
+	padding-left: 1em;
+	margin: 1em 0;
 }
-
+.blog-icons li{
+	padding: .2em;
+	display: inline;
+}
+.blog-icons li:before {
+	content: none;
+	margin-top: 0;
+}
 .blog-icons svg:hover {
 	color: $primary-color;
 }
-
 .paged #blog-header.has-cover,
 .tag-template #blog-header {
 	padding: 4em 0;
@@ -462,18 +468,15 @@ img {
 	display: block;
 	margin: 0 auto;
 }
-
 .blog-author {
 	position: relative;
 	height: 200px;
 }
-
 .blog-author img {
 	border-radius: 10em;
 	height: 100%;
 	width: auto;
 }
-
 .blog-name {
 	position: relative;
 	display: block;
@@ -778,14 +781,6 @@ img {
 	z-index: 10;
 	padding: 1em 0;
 }
-#footer h3 {
-	text-align: left;
-	padding-bottom: .5em;
-	margin-top: .5em;
-}
-.support a {
-	border-bottom: 1px solid $primary-color;
-}
 #footer section:after {
 	position: absolute;
 	width: 32em;
@@ -796,8 +791,15 @@ img {
 	content: '';
 	background: $color-gray-90;
 }
+#footer h3 {
+	text-align: left;
+	padding-bottom: .5em;
+	margin-top: .5em;
+}
+.support a {
+	border-bottom: 1px solid $primary-color;
+}
 .footer-icons {
-	padding: 1em 0;
 	text-align: center;
 }
 .credits {
@@ -807,6 +809,9 @@ img {
 	padding: 1.1em 0;
 	overflow: auto;
 	opacity: 0.5;
+}
+.credits:after {
+	display: none;
 }
 .credits a {
 	color: inherit;
