@@ -778,6 +778,14 @@ img {
 	z-index: 10;
 	padding: 1em 0;
 }
+#footer h3 {
+	text-align: left;
+	padding-bottom: .5em;
+	margin-top: .5em;
+}
+.support a {
+	border-bottom: 1px solid $primary-color;
+}
 #footer section:after {
 	position: absolute;
 	width: 32em;
@@ -791,11 +799,6 @@ img {
 .footer-icons {
 	padding: 1em 0;
 	text-align: center;
-}
-.footer-icons h3 {
-	text-align: left;
-	padding-bottom: .5em;
-	margin-top: .5em;
 }
 .credits {
 	text-align: center;
