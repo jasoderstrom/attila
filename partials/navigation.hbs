@@ -6,6 +6,7 @@
 			{{#foreach navigation}}
 			<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
 			{{/foreach}}
+            <li class="nav-support"><a href="#"><i class="fas fa-dollar-sign"></i>  Support</a></li>
 			{{#if @labs.subscribers}}
 			<li class="nav-subscribe"><a href="{{@blog.url}}/subscribe/"><i class="fas fa-rss"></i>  Subscribe</a></li>
 			{{else}}
