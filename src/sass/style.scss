@@ -1493,7 +1493,11 @@ img {
 	html {
 	    font-size: 50%;
 	}
-	.post-share,
+	.post-share {
+		max-width: 80%;
+		margin: 2em auto;
+		float: none;
+	}
 	.post-tags {
 		max-width: none;
 		float: none;
