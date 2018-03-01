@@ -19,6 +19,15 @@
         </li>
     {{/if}}
     <li>
-        <a href="{{@blog.url}}/rss" title="RSS"><i class="fas fa-rss-square fa-2x"></i></a>
+        <a href="mailto:justin@justinsoderstrom.com" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a>
     </li>
+    {{#if @labs.subscribers}}
+        <li>
+            <a href="{{@blog.url}}/subscribe/" title="Email subscribe"><i class="fas fa-rss-square fa-2x"></i></a>
+        </li>
+    {{else}}
+        <li>
+            <a href="{{@blog.url}}/rss" title="RSS"><i class="fas fa-rss-square fa-2x"></i></a>
+        </li>
+    {{/if}}
 </ul>
