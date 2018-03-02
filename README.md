@@ -1,6 +1,20 @@
 # justinsoderstrom.com-ghost-theme
 
-The Ghost theme used for justinsoderstrom.com
+The Ghost theme used for justinsoderstrom.com. It's customized to me to suit my needs, but with some tweeking it could work for anybody.
+
+## Development
+
+Install [Grunt](http://gruntjs.com/getting-started/):
+
+	npm install -g grunt-cli
+
+Install Grunt dependencies:
+
+	npm install
+
+Build Grunt project:
+
+	grunt build
 
 ## Copyright & License
 
