@@ -8,11 +8,11 @@
 			{{/foreach}}
             <li class="nav-support"><a href="https://paypal.me/JustinSoderstrom" title="Support me!"><i class="fas fa-dollar-sign"></i>  Support</a></li>
 			{{#if @labs.subscribers}}
-			<li class="nav-subscribe"><a href="{{@blog.url}}/subscribe/"><i class="fas fa-at"></i>  Subscribe Email</a></li>
-			<li class="nav-rss"><a href="{{@blog.url}}/rss/"><i class="fas fa-rss"></i>  Subscribe RSS</a></li>
+			<li class="nav-subscribe"><a href="{{@blog.url}}/subscribe/" title="Subscribe with your email!"><i class="fas fa-at"></i>  Subscribe Email</a></li>
+			<li class="nav-rss"><a href="{{@blog.url}}/rss/" title="RSS"><i class="fas fa-rss"></i>  Subscribe RSS</a></li>
 			{{else}}
-			<li class="nav-rss"><a href="#"><i class="fas fa-at"></i>  Subscribe Email</a></li>
-			<li class="nav-rss"><a href="{{@blog.url}}/rss/"><i class="fas fa-rss"></i>  Subscribe RSS</a></li>
+			<li class="nav-rss"><a href="#" title="Subscribe with your email"><i class="fas fa-at"></i>  Subscribe Email</a></li>
+			<li class="nav-rss"><a href="{{@blog.url}}/rss/" title="RSS"><i class="fas fa-rss"></i>  Subscribe RSS</a></li>
 			{{/if}}
 		</ul>
 	</div>
