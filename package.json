@@ -1,20 +1,16 @@
 {
-	"name": "attila",
-	"description": "Ghost Theme",
-	"demo": "http://attila.zutrinken.com",
-	"version": "1.4.0",
+	"name": "justinsoderstrom-ghost-theme",
+	"description": "A theme designed for justinsoderstrom.com",
+	"demo": "https://justinsoderstrom.com",
+	"version": "1.0.0",
 	"engines": {
 		"ghost": ">=1.0.0"
 	},
 	"license": "MIT",
-	"screenshots": {
-		"desktop": "src/screenshot-desktop.jpg",
-		"mobile": "src/screenshot-mobile.jpg"
-	},
 	"author": {
-		"name": "Peter Amende",
-		"email": "xoxo@zutrinken.com",
-		"url": "http://zutrinken.com"
+		"name": "Justin Soderstrom",
+		"email": "justin@justinsoderstrom.com",
+		"url": "https://justinsoderstrom.com"
 	},
 	"gpm": {
 		"type": "theme",
@@ -29,7 +25,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zutrinken/attila.git"
+		"url": "https://github.com/jasoderstrom/justinsoderstrom.com-ghost-theme.git"
 	},
 	"devDependencies": {
 		"autoprefixer-core": "^5.2.1",
@@ -42,7 +38,7 @@
 		"grunt-sass": "^1.0.0",
 		"load-grunt-tasks": "^3.2.0"
 	},
-    "config": {
-        "posts_per_page": 10
-    }
+	"config": {
+		"posts_per_page": 10
+	}
 }

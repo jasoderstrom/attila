@@ -9,10 +9,13 @@
 			{{/if}}
 			{{#if @blog.navigation}}
 			<span id="menu-button" class="nav-button">
-				<a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+				<a class="menu-button"><i class="fas fa-bars"></i> Menu</a>
 			</span>
 			{{/if}}
 		</nav>
+        <figure class="blog-author">
+            <img src="{{asset "images/headshot.jpg"}}" alt="Justin Soderstrom profile picture" />
+        </figure>
 		<h1 class="blog-name"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{#if @blog.description}}
 		<span class="blog-description">{{@blog.description}}</span>
@@ -21,6 +24,9 @@
 		<div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
 		{{/if}}
 	</div>
+    <div>
+       {{> social-icons}}
+    </div>
 </header>
 
 <div id="index" class="container">

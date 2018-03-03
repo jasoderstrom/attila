@@ -2,7 +2,7 @@
 
 {{#post}}
 
-<header id="post-header"{{#if cover_image}} class="has-cover" {{/if}}>
+<header id="post-header"{{#if feature_image}} class="has-cover"{{else}}{{#if @blog.cover_image}} class="has-cover"{{/if}}{{/if}}>
 	<div class="inner">
 		<nav id="navigation">
 			{{#if @blog.logo}}
@@ -11,17 +11,23 @@
 			</span>
 			{{else}}
 			<span id="home-button" class="nav-button">
-				<a class="home-button" href="{{@blog.url}}" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+				<a class="home-button" href="{{@blog.url}}" title="Home"><i class="fas fa-angle-left"></i> Home</a>
 			</span>
 			{{/if}}
 			{{#if @blog.navigation}}
 			<span id="menu-button" class="nav-button">
-				<a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+				<a class="menu-button"><i class="fas fa-bars"></i> Menu</a>
 			</span>
 			{{/if}}
 		</nav>
 		<h1 class="post-title">{{{title}}}</h1>
-		{{#if cover_image}}<div class="post-cover cover" style="background-image: url('{{img_url cover_image}}');"></div>{{/if}}
+		{{#if feature_image}}
+             <div class="post-cover cover" style="background-image: url('{{img_url feature_image}}');"></div>
+        {{else}}
+         {{#if @blog.cover_image}}
+             <div class="post-cover cover" style="background-image: url('{{img_url @blog.cover}}');"></div>
+         {{/if}}
+        {{/if}}
 	</div>
 </header>
 
